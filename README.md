@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![Licencia](https://img.shields.io/badge/licencia-MIT-green)
 ![Sin dependencias](https://img.shields.io/badge/dependencias-ninguna-brightgreen)
+![Tests](https://github.com/Abel-Gavilanez/registros-academicos-listas-enlazadas-persistencia/actions/workflows/tests.yml/badge.svg)
 
 > Gestión de inscritos, historial académico y grupos de estudio usando listas enlazadas
 > simple, doble y circular implementadas desde cero, con persistencia en CSV y JSON.
