@@ -1,4 +1,4 @@
-"""Casos de prueba MÍNIMOS del reto (guion para el video de ejecución).
+"""Casos de prueba MÍNIMOS (guion para el video de ejecución).
 
     python src/casos_prueba.py          # deja los archivos de ejemplo en data/
     python src/casos_prueba.py --tmp    # usa una carpeta temporal (no toca data/)
