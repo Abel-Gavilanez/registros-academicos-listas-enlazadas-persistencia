@@ -1,0 +1,72 @@
+{
+  "tipo": "doble",
+  "semestres": [
+    {
+      "anio": 2024,
+      "term": 1,
+      "materias": [
+        {
+          "cod": "mat101",
+          "nombre": "calculo 1",
+          "nota": 8.0
+        },
+        {
+          "cod": "pro101",
+          "nombre": "programacio 1",
+          "nota": 9.0
+        },
+        {
+          "cod": "fis101",
+          "nombre": "fisica 1",
+          "nota": 7.0
+        }
+      ]
+    },
+    {
+      "anio": 2025,
+      "term": 1,
+      "materias": [
+        {
+          "cod": "est201",
+          "nombre": "estadistica",
+          "nota": 9.0
+        },
+        {
+          "cod": "bdd201",
+          "nombre": "base de datos",
+          "nota": 9.5
+        },
+        {
+          "cod": "1",
+          "nombre": "2023",
+          "nota": 1.0
+        },
+        {
+          "cod": "int100",
+          "nombre": "introduccion a la ingenieria",
+          "nota": 6.5
+        },
+        {
+          "cod": "com100",
+          "nombre": "comunicacion",
+          "nota": 7.5
+        },
+        {
+          "cod": "1",
+          "nombre": "2024",
+          "nota": 2.0
+        },
+        {
+          "cod": "alg201",
+          "nombre": "estructura de datos",
+          "nota": 8.5
+        },
+        {
+          "cod": "red201",
+          "nombre": "redes",
+          "nota": 8.0
+        }
+      ]
+    }
+  ]
+}

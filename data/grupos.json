@@ -1,0 +1,21 @@
+{
+  "tipo": "circular",
+  "actual": "grupo a",
+  "grupos": [
+    {
+      "nombre_grupo": "grupo a",
+      "tutor": "ing salazar",
+      "tema": "pilas y cola"
+    },
+    {
+      "nombre_grupo": "grupo b",
+      "tutor": "ing vera",
+      "tema": "listas enlazados"
+    },
+    {
+      "nombre_grupo": "grupo c",
+      "tutor": "ing nuñez",
+      "tema": "recursividad"
+    }
+  ]
+}
