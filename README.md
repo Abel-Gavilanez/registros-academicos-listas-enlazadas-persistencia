@@ -33,7 +33,7 @@ python -m unittest discover -s src -v   # 21 pruebas unitarias
 
 ## Estructura
 ```
-reto3_listas/
+registros-academicos-listas-enlazadas-persistencia/
 ├── src/
 │   ├── nodo_simple.py        # NodoSimple   { valor, siguiente }
 │   ├── nodo_doble.py         # NodoDoble    { valor, anterior, siguiente }
