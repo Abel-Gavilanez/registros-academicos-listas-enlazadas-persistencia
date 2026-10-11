@@ -47,6 +47,18 @@ python -m unittest discover -s src -v   # 21 pruebas unitarias
 3. **Lista circular**: menú `3` → agregar 3 grupos, `3` buscar (recursivo, con traza), `4` rotar 2, `5` recorrer 2 vueltas (se ve el ciclo), `2` eliminar uno y volver a recorrer.
 4. **Reportes** (menú `4`): Top 3 mejores promedios, siguiente grupo en turno (tras rotar) y cantidad de inscritos.
 
+## Demo
+
+```
+=== MENÚ PRINCIPAL ===
+1. Inscritos (lista simple)
+2. Historial (lista doble)
+3. Grupos (lista circular)
+4. Reportes
+0. Salir
+Opción: 
+```
+
 ## Estructura
 ```
 registros-academicos-listas-enlazadas-persistencia/
