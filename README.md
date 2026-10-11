@@ -72,6 +72,7 @@ python src/casos_prueba.py --tmp  # igual, pero en una carpeta temporal (no toca
 0. Salir
 Opción:
 ```
+   🎥 [Ver video de demostración](PEGA_AQUÍ_TU_ENLACE)
 
 ## Pruebas
 
