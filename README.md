@@ -20,8 +20,15 @@ Proyecto de estructuras de datos en Python que implementa tres tipos de listas e
 `list`/`dict` se usan **solo** en `to_dict()/from_dict()` y en los archivos de persistencia.
 La lista circular incluye búsqueda **recursiva** con traza: `ListaCircular.buscar_recursivo(valor)`.
 
-## Requisitos
-Python 3.8 o superior. No requiere librerías externas (solo la biblioteca estándar).
+
+## Instalación
+
+```bash
+git clone https://github.com/Abel-Gavilanez/registros-academicos-listas-enlazadas-persistencia.git
+cd registros-academicos-listas-enlazadas-persistencia
+```
+
+**Requisitos:** Python 3.8 o superior. No necesita librerías externas, solo la biblioteca estándar.
 
 ## Cómo ejecutar
 
