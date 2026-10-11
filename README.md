@@ -1,4 +1,4 @@
-# Reto 3 – Registros Dinámicos Académicos con Listas Enlazadas (simple, doble y circular) + Persistencia
+# Registros Dinámicos Académicos con Listas Enlazadas (simple, doble y circular) + Persistencia
 
 Módulo de listas enlazadas **programadas desde cero** (sin `list` para almacenar nodos) para manejar tres registros académicos:
 
