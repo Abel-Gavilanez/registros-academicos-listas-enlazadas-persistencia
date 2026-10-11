@@ -1,4 +1,4 @@
-"""Menú principal en consola - Reto 3: Registros académicos con listas enlazadas.
+"""Menú principal en consola - Registros académicos con listas enlazadas.
 
 Ejecutar:   python src/app.py
 """
