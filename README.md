@@ -86,6 +86,7 @@ python -m unittest discover -s src -v   # 21 pruebas unitarias
 | Operación | Simple | Doble | Circular |
 |---|---|---|---|
 | Insertar al final | O(1) (puntero `cola`) | O(1) (puntero `cola`) | O(1) (puntero `cola`) |
+| Insertar ordenado | n/a | O(n) | n/a |
 | Buscar | O(n) | O(n) | O(n) |
 | Eliminar | O(n) | O(n) | O(n) |
 | Recorrer | O(n) | O(n) | O(n) |
