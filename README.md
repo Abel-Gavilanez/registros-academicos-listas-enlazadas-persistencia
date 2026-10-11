@@ -64,6 +64,10 @@ python src/casos_prueba.py --tmp  # igual, pero en una carpeta temporal (no toca
 
 ## Demo
 
+🎥 [Ver video de demostración](https://drive.google.com/file/d/1Phi11VGhYPOIdkusdM05vBF-coS-jMlz/view?usp=sharing)
+
+Menú principal:
+
 ```text
 === MENÚ PRINCIPAL ===
 1. Inscritos (lista simple)
@@ -73,24 +77,45 @@ python src/casos_prueba.py --tmp  # igual, pero en una carpeta temporal (no toca
 0. Salir
 Opción:
 ```
-   🎥 [Ver video de demostración](https://drive.google.com/file/d/1Phi11VGhYPOIdkusdM05vBF-coS-jMlz/view?usp=sharing)
+
+Búsqueda recursiva con traza en la lista circular (`buscar_recursivo(..., verbose=True)`), con los grupos A, B y C:
+
+```text
+# Grupo existente: buscar "Grupo C"
+buscar_rec(nodo='Grupo A')  [llamada 1]
+   buscar_rec(nodo='Grupo B')  [llamada 2]
+      buscar_rec(nodo='Grupo C')  [llamada 3]
+      -> ENCONTRADO: Grupo C
+
+# Grupo inexistente: buscar "Grupo Z"
+buscar_rec(nodo='Grupo A')  [llamada 1]
+   buscar_rec(nodo='Grupo B')  [llamada 2]
+      buscar_rec(nodo='Grupo C')  [llamada 3]
+      -> el siguiente es la cabeza: vuelta completa, NO existe
+```
 
 ## Pruebas
 
 ```bash
-python -m unittest discover -s src -v   # 21 pruebas unitarias
+python -m unittest discover -s src -v   # pruebas unitarias
 ```
 
 ## Complejidad de operaciones
 
+n = número de nodos, k = pasos de rotación.
+
 | Operación | Simple | Doble | Circular |
 |---|---|---|---|
-| Insertar al final | O(1) (puntero `cola`) | O(1) (puntero `cola`) | O(1) (puntero `cola`) |
+| Insertar (valida duplicados) | O(n) | n/a | O(n) |
 | Insertar ordenado | n/a | O(n) | n/a |
-| Buscar | O(n) | O(n) | O(n) |
+| Enlazar al final (puntero `cola`) | O(1) | O(1) | O(1) |
+| Buscar | O(n) | O(n) | O(n) (recursiva: O(n) de pila) |
 | Eliminar | O(n) | O(n) | O(n) |
-| Recorrer | O(n) | O(n) | O(n) |
+| Recorrer | O(n) | O(n) | O(n) por vuelta |
 | Rotar `k` posiciones | n/a | n/a | O(k) |
+
+`Insertar` es O(n) porque primero se comprueba que no exista un id o nombre repetido; el enlace del nodo en sí es O(1) gracias a `cola`.
+En la lista doble, insertar un semestre nuevo al principio o al final es O(1), pero insertar en medio requiere recorrer la lista.
 
 ## Estructura
 
@@ -121,6 +146,7 @@ python -m unittest discover -s src -v   # 21 pruebas unitarias
 - Las escrituras de archivos son atómicas (archivo temporal + `os.replace`).
 - El JSON incluye el campo `"tipo"` para reconstruir la lista correcta; el de grupos guarda además el turno `actual`.
 - `rotar(k)` es O(k); si se conserva el puntero `actual`, cada avance cuesta O(1).
+- La búsqueda recursiva de la lista circular usa una llamada por nodo, así que está limitada por la recursión de Python (unos 1000 niveles). Si la lista supera ese tamaño, `buscar_recursivo` lanza un `RecursionError` con un mensaje claro en lugar de fallar de forma inesperada.
 
 ## Licencia
 
