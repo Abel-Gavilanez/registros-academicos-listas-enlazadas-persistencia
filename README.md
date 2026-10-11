@@ -1,6 +1,15 @@
-# Registros Dinámicos Académicos con Listas Enlazadas (simple, doble y circular) + Persistencia
+# Registros Académicos · Listas Enlazadas en Python
 
-Módulo de listas enlazadas **programadas desde cero** (sin `list` para almacenar nodos) para manejar tres registros académicos:
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![Licencia](https://img.shields.io/badge/licencia-MIT-green)
+![Sin dependencias](https://img.shields.io/badge/dependencias-ninguna-brightgreen)
+
+> Gestión de inscritos, historial académico y grupos de estudio usando listas enlazadas
+> simple, doble y circular implementadas desde cero, con persistencia en CSV y JSON.
+
+## Descripción
+
+Proyecto de estructuras de datos en Python que implementa tres tipos de listas enlazadas **sin usar `list` para almacenar nodos**, aplicadas a tres registros académicos:
 
 | Módulo | Estructura | Contenido de cada nodo | Persistencia |
 |---|---|---|---|
