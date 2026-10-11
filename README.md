@@ -16,7 +16,7 @@ Python 3.8 o superior. No requiere librerías externas (solo la biblioteca está
 
 ## Cómo ejecutar
 
-Desde la carpeta `reto3_listas/`:
+Desde la raíz del repositorio:
 
 ```bash
 python src/app.py                 # menú principal en consola
